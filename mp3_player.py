@@ -27,13 +27,12 @@ lengths = {track: MP3(PATH + track).info.length for track in tracks}
 ##Setup the hardware - See Fritzing wiring diagram
 volume_pot = MCP3008(channel=0, select_pin=7)
 position_pot = MCP3008(channel=1, select_pin=7)
-play_btn = Button(26)
-stop_btn = Button(19)
-pause_btn = Button(13)
-next_btn = Button(6)
-previous_btn = Button(5)
-shuffle_btn = Button(0)
-
+play_btn =  Button(0)
+stop_btn = Button(5)
+pause_btn = Button(6)
+next_btn = Button(13)
+previous_btn = Button(19)
+shuffle_btn = Button(26)
 
 ##Globals
 position = 0
